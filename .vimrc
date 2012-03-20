@@ -23,7 +23,7 @@ set cursorline
 
 set tabstop=4
 set shiftwidth=4
-set listchars=trail:-
 set list
+set listchars=tab:\|\ ,trail:·
 set noexpandtab
-
+hi SpecialKey ctermbg=none ctermfg=DarkGrey
