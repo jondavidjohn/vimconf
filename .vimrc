@@ -1,6 +1,6 @@
 call pathogen#infect()
 
-" Turn on line numbering. Turn it off with "set nonu" 
+" Turn on line numbering. Turn it off with "set nonu"
 set nu
 
 " " Set syntax on
@@ -19,11 +19,12 @@ set hls
 " Change colorscheme from default
 set background=dark
 colorscheme solarized
-set cursorline
 
 set tabstop=4
 set shiftwidth=4
 set list
-set listchars=tab:\|\ ,trail:·
+set listchars=tab:\|\ ,trail:-
 set noexpandtab
-hi SpecialKey ctermbg=none ctermfg=DarkGrey
+hi SpecialKey ctermbg=none ctermfg=0
+highlight EndSpaces ctermfg=9
+match EndSpaces /\s\+$/
