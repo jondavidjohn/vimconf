@@ -7,7 +7,7 @@ set nu
 syntax on
 
 " " Indent automatically depending on filetype
-" filetype indent on
+filetype plugin indent on
 set autoindent
 
 " " Case insensitive search
@@ -28,3 +28,9 @@ set noexpandtab
 hi SpecialKey ctermbg=none ctermfg=0
 highlight EndSpaces ctermfg=9
 match EndSpaces /\s\+$/
+
+" Syntastic Options
+let g:syntastic_auto_jump=1
+let g:syntastic_check_on_open=1
+let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['ruby', 'python', 'php'] }
+
