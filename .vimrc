@@ -30,7 +30,6 @@ highlight EndSpaces ctermfg=9
 match EndSpaces /\s\+$/
 
 " Syntastic Options
-let g:syntastic_auto_jump=1
 let g:syntastic_check_on_open=1
 let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['ruby', 'python', 'php'] }
 
@@ -40,6 +39,3 @@ map <C-k> <C-w><Up>
 map <C-j> <C-w><Down>
 map <C-l> <C-w><Right>
 map <C-h> <C-w><Left>
-
-" clear highlight on <esc>
-nnoremap <esc> :noh<Return><esc>
