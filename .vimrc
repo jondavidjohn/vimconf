@@ -47,6 +47,11 @@ map <Leader>t :TlistToggle<Enter>
 " GoTo File Equiv
 map <Leader>f :FufFile<Enter>
 
+" Syntastic
+map <Leader>s :SyntasticToggleMode<Enter>
+map <Leader>se :Errors<Enter>
+map <Leader>sc :SyntasticCheck<Enter>
+
  "Make Arrows move differently
 map <Up> 10k
 map <Down> 10j
