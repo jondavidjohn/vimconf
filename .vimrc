@@ -31,24 +31,23 @@ hi SpecialKey ctermbg=none ctermfg=0
 highlight EndSpaces ctermfg=9
 match EndSpaces /\s\+$/
 
-" Syntastic Options
-let g:syntastic_check_on_open=1
-let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['ruby', 'python'] }
-let g:syntastic_python_checker_args = " --ignore=E501 "
+""" Mappings
 
-" Buffer switching
-map <C-k> <C-w><Up>
-map <C-j> <C-w><Down>
-map <C-l> <C-w><Right>
-map <C-h> <C-w><Left>
+let mapleader=" "
+
+" Buffer Navigation
+map <Leader>k <C-w><Up>
+map <Leader>j <C-w><Down>
+map <Leader>l <C-w><Right>
+map <Leader>h <C-w><Left>
 
 " TagList Toggle
-map <C-t> :TlistToggle<Enter>
+map <Leader>t :TlistToggle<Enter>
 
 " GoTo File Equiv
-map <C-f> :FufFile<Enter>
+map <Leader>f :FufFile<Enter>
 
-" Make Arrows move differently
+ "Make Arrows move differently
 map <Up> 10k
 map <Down> 10j
 map <Left> ^
