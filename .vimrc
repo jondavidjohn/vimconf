@@ -42,7 +42,7 @@ map <Leader>l <C-w><Right>
 map <Leader>h <C-w><Left>
 
 " TagList Toggle
-map <Leader>t :TlistToggle<Enter>
+map <Leader>m :TlistToggle<Enter>
 
 " GoTo File Equiv
 map <Leader>f :FufFile<Enter>
