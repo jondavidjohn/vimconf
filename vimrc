@@ -31,6 +31,9 @@ hi SpecialKey ctermbg=none ctermfg=0
 highlight EndSpaces ctermfg=9
 match EndSpaces /\s\+$/
 
+let g:syntastic_check_on_open=1
+let g:syntastic_python_checker_args = " --ignore=E501,W402 "
+
 """ Mappings
 
 let mapleader=" "
@@ -49,7 +52,7 @@ map <Leader>f :FufFile<Enter>
 
 " Syntastic
 map <Leader>s :SyntasticToggleMode<Enter>
-map <Leader>se :Errors<Enter>
+map <Leader>se :Errors<Enter><Leader>j
 map <Leader>sc :SyntasticCheck<Enter>
 
  "Make Arrows move differently
@@ -57,3 +60,9 @@ map <Up> 10k
 map <Down> 10j
 map <Left> ^
 map <Right> $
+
+" Indentation
+nmap > >>
+nmap < <<
+vmap > >gv
+vmap < <gv
