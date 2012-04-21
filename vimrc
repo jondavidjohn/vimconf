@@ -21,7 +21,7 @@ set background=dark
 colorscheme solarized
 
 set visualbell t_vb=    " turn off error beep/flash
-set novisualbell        " turn off visual bell<<
+set novisualbell        " turn off visual bell
 set tabstop=4
 set shiftwidth=4
 set list
