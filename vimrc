@@ -45,7 +45,8 @@ map <Leader>l <C-w><Right>
 map <Leader>h <C-w><Left>
 
 " TagList Toggle
-map <Leader>m :TlistToggle<Enter>
+map <Leader>m :TlistToggle<Enter><Leader>h
+let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:function'
 
 " GoTo File Equiv
 map <Leader>f :FufFile<Enter>
