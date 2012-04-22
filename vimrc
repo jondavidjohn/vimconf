@@ -66,3 +66,7 @@ nmap > >>
 nmap < <<
 vmap > >gv
 vmap < <gv
+
+" NERDCommenter
+map <Leader>c <Leader>cl
+map <Leader>x <Leader>cu
