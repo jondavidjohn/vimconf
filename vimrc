@@ -70,3 +70,7 @@ vmap < <gv
 " NERDCommenter
 map <Leader>c <Leader>cl
 map <Leader>x <Leader>cu
+
+" Tab Usage
+map <Leader>} :tabn<enter>
+map <Leader>{ :tabp<enter>
