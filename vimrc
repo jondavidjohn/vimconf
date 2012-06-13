@@ -57,10 +57,10 @@ map <Leader>se :Errors<Enter><Leader>j
 map <Leader>sc :SyntasticCheck<Enter>
 
  "Make Arrows move differently
-map <Up> 10k
-map <Down> 10j
-map <Left> ^
-map <Right> $
+"cmap <Up> 10k
+"cmap <Down> 10j
+"cmap <Left> ^
+"cmap <Right> $
 
 " Indentation
 nmap > >>
