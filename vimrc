@@ -72,18 +72,3 @@ map <Leader>x <Leader>cu
 " Tab Usage
 map <Leader>] :tabn<enter>
 map <Leader>[ :tabp<enter>
-
-" FuzzyFinder
-function! FuzzyFinderFunc()
-   if getfsize(expand('%')) == -1
-      let g:fuf_keyOpen='<CR>'
-      let g:fuf_keyOpenTabpage='<C-l>'
-   else
-      let g:fuf_keyOpen='<C-l>'
-      let g:fuf_keyOpenTabpage='<CR>'
-   endif
-   silent! :FufFile ./
-endfunction
-
-map <leader>f :call FuzzyFinderFunc()<CR>
-
