@@ -28,3 +28,6 @@
 [submodule "bundle/php-search-doc"]
 	path = bundle/php-search-doc
 	url = git://github.com/erikfercak/php-search-doc.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = git://git.wincent.com/command-t.git
