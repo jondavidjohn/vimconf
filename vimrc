@@ -48,9 +48,6 @@ map <Leader>h <C-w><Left>
 map <Leader>m :TlistToggle<Enter><Leader>h
 let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:function'
 
-" GoTo File Equiv
-map <Leader>f :FufFile<Enter>
-
 " Syntastic
 map <Leader>s :SyntasticToggleMode<Enter>
 map <Leader>se :Errors<Enter><Leader>j
@@ -73,5 +70,20 @@ map <Leader>c <Leader>cl
 map <Leader>x <Leader>cu
 
 " Tab Usage
-map <Leader>} :tabn<enter>
-map <Leader>{ :tabp<enter>
+map <Leader>] :tabn<enter>
+map <Leader>[ :tabp<enter>
+
+" FuzzyFinder
+function! FuzzyFinderFunc()
+   if getfsize(expand('%')) == -1
+      let g:fuf_keyOpen='<CR>'
+      let g:fuf_keyOpenTabpage='<C-l>'
+   else
+      let g:fuf_keyOpen='<C-l>'
+      let g:fuf_keyOpenTabpage='<CR>'
+   endif
+   silent! :FufFile ./
+endfunction
+
+map <leader>f :call FuzzyFinderFunc()<CR>
+
