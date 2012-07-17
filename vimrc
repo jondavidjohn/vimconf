@@ -9,6 +9,7 @@ syntax on
 " " Indent automatically depending on filetype
 filetype plugin indent on
 set autoindent
+set backspace=indent,eol,start
 
 " " Case insensitive search
 set ic
@@ -17,8 +18,8 @@ set ic
 set hls
 
 " Change colorscheme from default
-set background=dark
-colorscheme solarized
+set t_Co=256
+colorscheme xoria256
 
 set visualbell t_vb=    " turn off error beep/flash
 set novisualbell        " turn off visual bell
@@ -27,8 +28,8 @@ set shiftwidth=4
 set list
 set listchars=tab:\|\ ,trail:-
 set noexpandtab
-hi SpecialKey ctermbg=none ctermfg=0
-highlight EndSpaces ctermfg=9
+hi SpecialKey ctermbg=none ctermfg=16
+highlight EndSpaces ctermfg=2
 match EndSpaces /\s\+$/
 
 let g:syntastic_check_on_open=1
@@ -72,3 +73,9 @@ map <Leader>x <Leader>cu
 " Tab Usage
 map <Leader>] :tabn<enter>
 map <Leader>[ :tabp<enter>
+
+" NERD Tree usage
+" auto close if only nerdtree is openl
+" let target_pwd=system('if [[ `pwd` == *"wp-content"* ]]; then echo `pwd` | sed s/wp-content.*/wp-content\\//g; else echo `pwd`/; fi ]]')
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+map <Leader>e :NERDTreeToggle<Enter>
