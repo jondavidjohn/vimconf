@@ -37,3 +37,9 @@
 [submodule "bundle/vim-instant-markdown"]
 	path = bundle/vim-instant-markdown
 	url = git://github.com/suan/vim-instant-markdown.git
+[submodule "bundle/256-colors"]
+	path = bundle/256-colors
+	url = git://github.com/noah/vim256-color.git
+[submodule "bundle/php"]
+	path = bundle/php
+	url = git://github.com/StanAngeloff/php.vim.git

@@ -19,7 +19,7 @@ set hls
 
 " Change colorscheme from default
 set t_Co=256
-colorscheme twilight256
+colorscheme railscasts
 
 set cursorline
 hi clear CursorLine
@@ -32,7 +32,7 @@ set shiftwidth=4
 set list
 set listchars=tab:\|\ ,trail:-
 set noexpandtab
-hi SpecialKey ctermbg=none ctermfg=16
+hi SpecialKey ctermbg=none ctermfg=235
 highlight EndSpaces ctermfg=2
 match EndSpaces /\s\+$/
 hi MatchParen ctermbg=1 ctermfg=15
