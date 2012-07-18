@@ -19,7 +19,11 @@ set hls
 
 " Change colorscheme from default
 set t_Co=256
-colorscheme xoria256
+colorscheme twilight256
+
+set cursorline
+hi clear CursorLine
+hi CursorLine ctermbg=236
 
 set visualbell t_vb=    " turn off error beep/flash
 set novisualbell        " turn off visual bell
@@ -31,6 +35,7 @@ set noexpandtab
 hi SpecialKey ctermbg=none ctermfg=16
 highlight EndSpaces ctermfg=2
 match EndSpaces /\s\+$/
+hi MatchParen ctermbg=1 ctermfg=15
 
 let g:syntastic_check_on_open=1
 let g:syntastic_python_checker_args = " --ignore=E501,W402 "
