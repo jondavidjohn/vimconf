@@ -43,3 +43,9 @@
 [submodule "bundle/php"]
 	path = bundle/php
 	url = git://github.com/StanAngeloff/php.vim.git
+[submodule "bundle/json-bundle"]
+	path = bundle/json-bundle
+	url = git://github.com/vim-scripts/vim-json-bundle.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git

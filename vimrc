@@ -20,11 +20,13 @@ set hls
 " Change colorscheme from default
 set t_Co=256
 colorscheme railscasts
-
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+set ruler
 set cursorline
 hi clear CursorLine
 hi CursorLine ctermbg=236
-
+set clipboard=unnamed
 set visualbell t_vb=    " turn off error beep/flash
 set novisualbell        " turn off visual bell
 set tabstop=4
@@ -78,6 +80,20 @@ map <Leader>x <Leader>cu
 " Tab Usage
 map <Leader>] :tabn<enter>
 map <Leader>[ :tabp<enter>
+
+" Strip trailing whitespace
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+nnoremap <silent> <Leader>sw :call <SID>StripTrailingWhitespaces()<CR>
 
 " NERD Tree usage
 " auto close if only nerdtree is openl
