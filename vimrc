@@ -1,4 +1,5 @@
 call pathogen#infect()
+call pathogen#helptags()
 
 " Turn on line numbering. Turn it off with set nonu
 set nu
@@ -22,7 +23,6 @@ set t_Co=256
 colorscheme railscasts
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-set ruler
 set cursorline
 hi clear CursorLine
 hi CursorLine ctermbg=236
@@ -43,7 +43,6 @@ let g:syntastic_check_on_open=1
 let g:syntastic_python_checker_args = " --ignore=E501,W402 "
 
 """ Mappings
-
 let mapleader=" "
 
 " Buffer Navigation
@@ -100,3 +99,10 @@ nnoremap <silent> <Leader>sw :call <SID>StripTrailingWhitespaces()<CR>
 " let target_pwd=system('if [[ `pwd` == *"wp-content"* ]]; then echo `pwd` | sed s/wp-content.*/wp-content\\//g; else echo `pwd`/; fi ]]')
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 map <Leader>e :NERDTreeToggle<Enter>
+
+" PowerLine Config
+set nocompatible   " Disable vi-compatibility
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show Unicode glyphs
+let g:Powerline_symbols = 'fancy'
+
