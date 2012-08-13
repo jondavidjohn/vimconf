@@ -70,3 +70,6 @@
 	path = bundle/powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
 	ignore = untracked
+[submodule "bundle/rails"]
+	path = bundle/rails
+	url = git://github.com/tpope/vim-rails.git
