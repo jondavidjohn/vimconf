@@ -51,6 +51,9 @@ map <Leader>j <C-w><Down>
 map <Leader>l <C-w><Right>
 map <Leader>h <C-w><Left>
 
+" auto set paste (disable indent on cmd-v)
+imap <D-V> ^O"+p
+
 " TagList Toggle
 map <Leader>m :TlistToggle<Enter><Leader>h
 let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:function'
@@ -60,11 +63,18 @@ map <Leader>s :SyntasticToggleMode<Enter>
 map <Leader>se :Errors<Enter><Leader>j
 map <Leader>sc :SyntasticCheck<Enter>
 
- "Make Arrows move differently
-"cmap <Up> 10k
-"cmap <Down> 10j
-"cmap <Left> ^
-"cmap <Right> $
+" Make Arrows move differently
+nmap <Up> 20k
+nmap <Down> 20j
+nmap <Left> ^
+nmap <Right> $
+
+" Prevent Arrow movement edits to effect command-line mode
+cunmap <Up>
+cunmap <Down>
+cunmap <Left>
+cunmap <Right>
+
 
 " Indentation
 nmap > >>
