@@ -70,10 +70,10 @@ nmap <Left> ^
 nmap <Right> $
 
 " Prevent Arrow movement edits to effect command-line mode
-cunmap <Up>
-cunmap <Down>
-cunmap <Left>
-cunmap <Right>
+"cunmap <Up>
+"cunmap <Down>
+"cunmap <Left>
+"cunmap <Right>
 
 
 " Indentation
