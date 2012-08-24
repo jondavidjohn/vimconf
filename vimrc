@@ -20,14 +20,12 @@ set hls
 
 " Change colorscheme from default
 set t_Co=256
-let g:solarized_termcolors=256
-set background=light
-colorscheme solarized
+colorscheme railscasts
 "let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 "let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set cursorline
 hi clear CursorLine
-hi CursorLine ctermbg=255
+hi CursorLine ctermbg=233
 set clipboard=unnamed
 set visualbell t_vb=    " turn off error beep/flash
 set novisualbell        " turn off visual bell
@@ -36,10 +34,10 @@ set shiftwidth=4
 set list
 set listchars=tab:\|\ ,trail:-
 set noexpandtab
-hi SpecialKey ctermbg=none ctermfg=252
-highlight EndSpaces ctermbg=124 ctermfg=253
+hi SpecialKey ctermbg=none ctermfg=232
+highlight EndSpaces ctermbg=88 ctermfg=255
 match EndSpaces /\s\+$/
-hi MatchParen ctermbg=1 ctermfg=15
+hi MatchParen ctermbg=196 ctermfg=255
 
 let g:syntastic_check_on_open=1
 let g:syntastic_python_checker_args = " --ignore=E501,W402 "
@@ -56,7 +54,7 @@ map <Leader>h <C-w><Left>
 " auto set paste (disable indent on cmd-v)
 
 " auto semicolon EOL
-inoremap <leader>; <C-o>A;
+nnoremap <Leader>; A;<Esc>
 
 " TagList Toggle
 map <Leader>m :TlistToggle<Enter><Leader>h
@@ -78,7 +76,6 @@ nmap <Right> $
 "cunmap <Down>
 "cunmap <Left>
 "cunmap <Right>
-
 
 " Indentation
 nmap > >>
