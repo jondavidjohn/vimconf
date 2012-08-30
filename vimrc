@@ -59,6 +59,7 @@ nnoremap <Leader>; A;<Esc>
 " TagList Toggle
 map <Leader>m :TlistToggle<Enter><Leader>h
 let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:function'
+let tlist_php_settings = 'php;c:class;f:function'
 
 " Syntastic
 map <Leader>s :SyntasticToggleMode<Enter>
@@ -117,3 +118,5 @@ set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 let g:Powerline_symbols = 'fancy'
 
+" Command T ignore
+set wildignore+=wp/**,wp-admin/**,wp-includes/**,.git/**,.svn/**,*.png,*.jpg,*.swf,*.gif,*.zip
