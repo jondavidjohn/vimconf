@@ -50,10 +50,6 @@
 	path = bundle/vim-instant-markdown
 	url = git://github.com/suan/vim-instant-markdown.git
 	ignore = untracked
-[submodule "bundle/256-colors"]
-	path = bundle/256-colors
-	url = git://github.com/noah/vim256-color.git
-	ignore = untracked
 [submodule "bundle/php"]
 	path = bundle/php
 	url = git://github.com/StanAngeloff/php.vim.git
@@ -73,18 +69,20 @@
 [submodule "bundle/rails"]
 	path = bundle/rails
 	url = git://github.com/tpope/vim-rails.git
+	ignore = untracked
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git://github.com/tpope/vim-surround.git
+	ignore = untracked
 [submodule "bundle/tlib"]
 	path = bundle/tlib
 	url = git://github.com/tomtom/tlib_vim.git
+	ignore = untracked
 [submodule "bundle/addon-mw-utils"]
 	path = bundle/addon-mw-utils
 	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
+	ignore = untracked
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = git://github.com/honza/snipmate-snippets.git
-[submodule "bundle/solarized"]
-	path = bundle/solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	ignore = untracked

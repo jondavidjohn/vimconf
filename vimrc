@@ -18,9 +18,10 @@ set ic
 " " Higlhight search
 set hls
 
-" Change colorscheme from default
+" Change colorscheme from defaults
 set t_Co=256
-colorscheme railscasts
+colorscheme default
+
 "let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 "let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set cursorline
