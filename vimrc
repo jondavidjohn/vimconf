@@ -15,18 +15,20 @@ set backspace=indent,eol,start
 " " Case insensitive search
 set ic
 
-" " Higlhight search
-set hls
-
 " Change colorscheme from defaults
 set t_Co=256
-colorscheme default
+colorscheme slate
+
+" Higlhight search
+set hls
+highlight Search ctermbg=11 ctermfg=0
 
 "let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 "let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set cursorline
 hi clear CursorLine
 hi CursorLine ctermbg=233
+hi CursorLineNr term=bold ctermfg=red ctermbg=233
 set clipboard=unnamed
 set visualbell t_vb=    " turn off error beep/flash
 set novisualbell        " turn off visual bell
