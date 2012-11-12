@@ -109,12 +109,6 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 nnoremap <silent> <Leader>sw :call <SID>StripTrailingWhitespaces()<CR>
 
-" NERD Tree usage
-" auto close if only nerdtree is openl
-" let target_pwd=system('if [[ `pwd` == *"wp-content"* ]]; then echo `pwd` | sed s/wp-content.*/wp-content\\//g; else echo `pwd`/; fi ]]')
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-map <Leader>e :NERDTreeToggle<Enter>
-
 " PowerLine Config
 set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
@@ -123,3 +117,10 @@ let g:Powerline_symbols = 'fancy'
 
 " Command T ignore
 set wildignore+=wp/**,wp-admin/**,wp-includes/**,.git/**,.svn/**,*.png,*.jpg,*.swf,*.gif,*.zip
+
+" Code Folding
+:set foldmethod=syntax
+nmap <Leader>f za
+nmap <Leader>F zA
+nmap <Leader>c zM
+nmap <Leader>e zR
