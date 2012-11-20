@@ -4,6 +4,9 @@ call pathogen#helptags()
 " Turn on line numbering. Turn it off with set nonu
 set nu
 
+" Keep pwd in step with open file
+autocmd BufEnter * silent! lcd %:p:h
+
 " " Set syntax on
 syntax on
 

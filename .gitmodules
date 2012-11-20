@@ -86,3 +86,6 @@
 	path = bundle/snipmate-snippets
 	url = git://github.com/honza/snipmate-snippets.git
 	ignore = untracked
+[submodule "bundle/php-folding"]
+	path = bundle/php-folding
+	url = git://github.com/vim-scripts/phpfolding.vim.git
