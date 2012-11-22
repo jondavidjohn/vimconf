@@ -32,6 +32,8 @@ set cursorline
 hi clear CursorLine
 hi CursorLine ctermbg=233
 hi CursorLineNr term=bold ctermfg=red ctermbg=233
+hi FoldColumn ctermbg=yellow ctermfg=black
+hi Folded ctermbg=yellow ctermfg=black
 set clipboard=unnamed
 set visualbell t_vb=    " turn off error beep/flash
 set novisualbell        " turn off visual bell
