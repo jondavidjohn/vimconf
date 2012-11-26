@@ -123,6 +123,9 @@ let g:Powerline_symbols = 'fancy'
 " Command T ignore
 set wildignore+=wp/**,wp-admin/**,wp-includes/**,.git/**,.svn/**,*.png,*.jpg,*.swf,*.gif,*.zip
 
+" PHP Documenter
+nnoremap <silent> <Leader>d :call PhpDoc()<CR>
+
 " Code Folding
 :set foldmethod=syntax
 nmap <Leader>f za
