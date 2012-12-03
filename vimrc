@@ -29,9 +29,12 @@ highlight Search ctermbg=11 ctermfg=0
 "let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 "let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set cursorline
+set cc=80
+hi ColorColumn ctermbg=233
 hi clear CursorLine
 hi CursorLine ctermbg=233
 hi CursorLineNr term=bold ctermfg=red ctermbg=233
+hi LineNr ctermfg=darkgrey
 hi FoldColumn ctermbg=yellow ctermfg=black
 hi Folded ctermbg=yellow ctermfg=black
 set clipboard=unnamed

@@ -754,9 +754,21 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>932 551 924 485 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 342 650 826 0 0 1920 1178 </string>
+	<string>66 -609 586 826 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 22 1850 1156 0 0 1920 1178 </string>
+	<string>199 18 722 848 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>438 70 650 826 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>317 77 650 826 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>338 54 650 826 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>359 31 650 826 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 6</key>
+	<string>380 8 650 826 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 7</key>
+	<string>401 352 650 826 0 0 1920 1178 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1362,7 +1374,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.24530325829982758</real>
+			<real>0.0</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -1449,7 +1461,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2012-11-14T21:32:31Z</date>
+	<date>2012-12-01T03:50:29Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
