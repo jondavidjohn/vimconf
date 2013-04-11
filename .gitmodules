@@ -6,29 +6,13 @@
 	path = bundle/repmo
 	url = git://github.com/vim-scripts/repmo.vim.git
 	ignore = untracked
-[submodule "bundle/L9"]
-	path = bundle/L9
-	url = https://github.com/vim-scripts/L9.git
-	ignore = untracked
-[submodule "bundle/taglist.vim"]
-	path = bundle/taglist.vim
-	url = https://github.com/vim-scripts/taglist.vim.git
-	ignore = untracked
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
 	ignore = untracked
-[submodule "bundle/HTMLAutoCloseTag"]
-	path = bundle/HTMLAutoCloseTag
-	url = git://github.com/vim-scripts/HTML-AutoCloseTag.git
-	ignore = untracked
 [submodule "bundle/vim-autoclose"]
 	path = bundle/vim-autoclose
 	url = git://github.com/Townk/vim-autoclose.git
-	ignore = untracked
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = git://github.com/garbas/vim-snipmate.git
 	ignore = untracked
 [submodule "bundle/command-t"]
 	path = bundle/command-t
@@ -46,10 +30,6 @@
 	path = bundle/vim-markdown
 	url = git://github.com/tpope/vim-markdown.git
 	ignore = untracked
-[submodule "bundle/vim-instant-markdown"]
-	path = bundle/vim-instant-markdown
-	url = git://github.com/suan/vim-instant-markdown.git
-	ignore = untracked
 [submodule "bundle/php"]
 	path = bundle/php
 	url = git://github.com/StanAngeloff/php.vim.git
@@ -66,33 +46,13 @@
 	path = bundle/powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
 	ignore = untracked
-[submodule "bundle/rails"]
-	path = bundle/rails
-	url = git://github.com/tpope/vim-rails.git
-	ignore = untracked
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git://github.com/tpope/vim-surround.git
 	ignore = untracked
-[submodule "bundle/tlib"]
-	path = bundle/tlib
-	url = git://github.com/tomtom/tlib_vim.git
-	ignore = untracked
-[submodule "bundle/addon-mw-utils"]
-	path = bundle/addon-mw-utils
-	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
-	ignore = untracked
-[submodule "bundle/snipmate-snippets"]
-	path = bundle/snipmate-snippets
-	url = git://github.com/honza/snipmate-snippets.git
-	ignore = untracked
 [submodule "bundle/php-folding"]
 	path = bundle/php-folding
 	url = git://github.com/vim-scripts/phpfolding.vim.git
-	ignore = untracked
-[submodule "bundle/VimClojure"]
-	path = bundle/VimClojure
-	url = git://github.com/vim-scripts/VimClojure.git
 	ignore = untracked
 [submodule "bundle/php-doc-vim"]
 	path = bundle/php-doc-vim

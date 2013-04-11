@@ -67,27 +67,16 @@ map <Leader>h <C-w><Left>
 " auto semicolon EOL
 nnoremap <Leader>; A;<Esc>
 
-" TagList Toggle
-map <Leader>m :TlistToggle<Enter><Leader>h
-let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:function'
-let tlist_php_settings = 'php;c:class;f:function'
-
 " Syntastic
 map <Leader>s :SyntasticToggleMode<Enter>
 map <Leader>se :Errors<Enter><Leader>j
 map <Leader>sc :SyntasticCheck<Enter>
 
 " Make Arrows move differently
-nmap <Up> 20k
-nmap <Down> 20j
+nmap <Up> 10k
+nmap <Down> 10j
 nmap <Left> ^
 nmap <Right> $
-
-" Prevent Arrow movement edits to effect command-line mode
-"cunmap <Up>
-"cunmap <Down>
-"cunmap <Left>
-"cunmap <Right>
 
 " Indentation
 nmap > >>
