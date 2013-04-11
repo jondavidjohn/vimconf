@@ -84,9 +84,8 @@ nmap < <<
 vmap > >gv
 vmap < <gv
 
-" NERDCommenter
-map <Leader>c <Leader>cl
-map <Leader>x <Leader>cu
+" tComment
+map <Leader>c gc
 
 " Tab Usage
 map <Leader>] :tabn<enter>
