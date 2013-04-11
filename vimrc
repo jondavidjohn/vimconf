@@ -85,7 +85,8 @@ vmap > >gv
 vmap < <gv
 
 " tComment
-map <Leader>c gc
+map <Leader>/ :TComment<Enter>
+vmap <Leader>/ :TComment<Enter>
 
 " Tab Usage
 map <Leader>] :tabn<enter>
