@@ -6,10 +6,6 @@
 	path = bundle/repmo
 	url = git://github.com/vim-scripts/repmo.vim.git
 	ignore = untracked
-[submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
-	url = git://github.com/scrooloose/nerdcommenter.git
-	ignore = untracked
 [submodule "bundle/vim-autoclose"]
 	path = bundle/vim-autoclose
 	url = git://github.com/Townk/vim-autoclose.git
@@ -57,4 +53,12 @@
 [submodule "bundle/php-doc-vim"]
 	path = bundle/php-doc-vim
 	url = git://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
+	ignore = untracked
+[submodule "bundle/zencoding"]
+	path = bundle/zencoding
+	url = git://github.com/mattn/zencoding-vim.git
+	ignore = untracked
+[submodule "bundle/tcomment"]
+	path = bundle/tcomment
+	url = git://github.com/tomtom/tcomment_vim.git
 	ignore = untracked
