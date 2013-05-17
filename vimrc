@@ -61,6 +61,9 @@ map <Leader>k <C-w><Up>
 map <Leader>j <C-w><Down>
 map <Leader>l <C-w><Right>
 map <Leader>h <C-w><Left>
+" Use more natural splitting
+set splitbelow
+set splitright
 
 " auto set paste (disable indent on cmd-v)
 
