@@ -752,9 +752,17 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>853 342 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1280 570 650 826 0 0 2560 1418 </string>
+	<string>1600 318 665 826 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>398 167 650 826 0 0 2560 1418 </string>
+	<string>0 32 2553 1386 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>493 512 665 826 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>0 32 2553 1386 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>461 98 665 826 0 0 2560 1418 </string>
+	<key>NeverWarnAboutShortLivedSessions_98856E5F-0E47-4DF6-93FA-B2115EC0C335</key>
+	<true/>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1447,7 +1455,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-05-16T20:55:16Z</date>
+	<date>2013-06-21T14:47:43Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
