@@ -30,10 +30,6 @@
 	path = bundle/php
 	url = git://github.com/StanAngeloff/php.vim.git
 	ignore = untracked
-[submodule "bundle/json-bundle"]
-	path = bundle/json-bundle
-	url = git://github.com/vim-scripts/vim-json-bundle.git
-	ignore = untracked
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
@@ -65,6 +61,7 @@
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
 	url = git@github.com:pangloss/vim-javascript.git
+	ignore = untracked
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git@github.com:msanders/snipmate.vim.git
@@ -72,6 +69,12 @@
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = git@github.com:vim-ruby/vim-ruby.git
+	ignore = untracked
 [submodule "bundle/vim-javascript-syntax"]
 	path = bundle/vim-javascript-syntax
 	url = git@github.com:jelera/vim-javascript-syntax.git
+	ignore = untracked
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = git@github.com:elzr/vim-json.git
+	ignore = untracked
