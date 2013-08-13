@@ -8,7 +8,7 @@ set nu
 autocmd BufEnter * silent! lcd %:p:h
 
 " " Set syntax on
-syntax on
+syntax enable
 
 " " Indent automatically depending on filetype
 filetype plugin indent on
@@ -122,7 +122,8 @@ set wildignore+=wp/**,wp-admin/**,wp-includes/**,.git/**,.svn/**,*.png,*.jpg,*.s
 nnoremap <silent> <Leader>d :call PhpDoc()<CR>
 
 " Code Folding
-:set foldmethod=syntax
+set foldmethod=syntax
+set foldlevelstart=1
 nmap <Leader>f za
 nmap <Leader>F zA
 nmap <Leader>c zM
