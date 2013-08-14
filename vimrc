@@ -5,7 +5,7 @@ call pathogen#helptags()
 set nu
 
 " Keep pwd in step with open file
-autocmd BufEnter * silent! lcd %:p:h
+"autocmd BufEnter * silent! lcd %:p:h
 
 " " Set syntax on
 syntax enable
@@ -116,7 +116,7 @@ set encoding=utf-8 " Necessary to show Unicode glyphs
 let g:Powerline_symbols = 'fancy'
 
 " Command T ignore
-set wildignore+=wp/**,wp-admin/**,wp-includes/**,.git/**,.svn/**,*.png,*.jpg,*.swf,*.gif,*.zip
+set wildignore+=**/kohana/**,wp/**,wp-admin/**,wp-includes/**,.git/**,.svn/**,*.png,*.jpg,*.swf,*.gif,*.zip
 
 " PHP Documenter
 nnoremap <silent> <Leader>d :call PhpDoc()<CR>
