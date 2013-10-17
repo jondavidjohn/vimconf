@@ -14,6 +14,7 @@ syntax enable
 filetype plugin indent on
 set autoindent
 set backspace=indent,eol,start
+set title titlestring=
 
 " " Case insensitive search
 set ic
@@ -69,6 +70,7 @@ set splitright
 
 " auto semicolon EOL
 nnoremap <Leader>; A;<Esc>
+nnoremap ; :
 
 " Syntastic
 map <Leader>s :SyntasticToggleMode<Enter>
