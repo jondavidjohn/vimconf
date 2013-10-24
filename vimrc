@@ -130,3 +130,6 @@ nmap <Leader>f za
 nmap <Leader>F zA
 nmap <Leader>c zM
 nmap <Leader>e zR
+
+" Preview current file in Chrome
+nmap <Leader>P :!open -g -a "Google Chrome" %;<CR>
