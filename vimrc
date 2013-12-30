@@ -11,7 +11,7 @@ set nu
 syntax enable
 
 " " Indent automatically depending on filetype
-filetype plugin indent on
+filetype plugin on
 set autoindent
 set backspace=indent,eol,start
 set title titlestring=
@@ -70,7 +70,6 @@ set splitright
 
 " auto semicolon EOL
 nnoremap <Leader>; A;<Esc>
-nnoremap ; :
 
 " Syntastic
 map <Leader>s :SyntasticToggleMode<Enter>
@@ -88,10 +87,6 @@ nmap > >>
 nmap < <<
 vmap > >gv
 vmap < <gv
-
-" tComment
-map <Leader>/ :TComment<Enter>
-vmap <Leader>/ :TComment<Enter>
 
 " Tab Usage
 map <Leader>] :tabn<enter>
@@ -128,7 +123,7 @@ set foldmethod=syntax
 set foldlevelstart=1
 nmap <Leader>f za
 nmap <Leader>F zA
-nmap <Leader>c zM
+nmap <Leader>x zM
 nmap <Leader>e zR
 
 " Preview current file in Chrome
