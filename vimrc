@@ -41,8 +41,8 @@ hi Folded ctermbg=yellow ctermfg=black
 set clipboard=unnamed
 set visualbell t_vb=    " turn off error beep/flash
 set novisualbell        " turn off visual bell
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set list
 set listchars=tab:\|\ ,trail:-
