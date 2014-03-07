@@ -12,7 +12,7 @@ syntax enable
 
 " " Indent automatically depending on filetype
 filetype plugin on
-set autoindent
+set cindent
 set backspace=indent,eol,start
 set title titlestring=
 
@@ -43,9 +43,9 @@ set visualbell t_vb=    " turn off error beep/flash
 set novisualbell        " turn off visual bell
 set tabstop=4
 set shiftwidth=4
+set expandtab
 set list
 set listchars=tab:\|\ ,trail:-
-set noexpandtab
 hi SpecialKey ctermbg=none ctermfg=232
 highlight EndSpaces ctermbg=88 ctermfg=255
 match EndSpaces /\s\+$/
