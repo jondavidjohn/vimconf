@@ -83,3 +83,12 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule "bundle/emmet-vim"]
+	path = bundle/emmet-vim
+	url = git@github.com:mattn/emmet-vim.git
+[submodule "bundle/node.vim"]
+	path = bundle/node.vim
+	url = git@github.com:moll/vim-node.git
+[submodule "bundle/vim-web-indent"]
+	path = bundle/vim-web-indent
+	url = git@github.com:lukaszb/vim-web-indent.git
