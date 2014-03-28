@@ -92,3 +92,6 @@
 [submodule "bundle/vim-web-indent"]
 	path = bundle/vim-web-indent
 	url = git@github.com:lukaszb/vim-web-indent.git
+[submodule "bundle/vim-multiple-cursors"]
+	path = bundle/vim-multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
