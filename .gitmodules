@@ -97,3 +97,6 @@
   path = bundle/vim-multiple-cursors
   url = git@github.com:terryma/vim-multiple-cursors.git
   ignore = untracked
+[submodule "bundle/vim-jade"]
+	path = bundle/vim-jade
+	url = git://github.com/digitaltoad/vim-jade.git

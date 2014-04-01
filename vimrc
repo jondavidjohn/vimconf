@@ -113,14 +113,9 @@ set encoding=utf-8 " Necessary to show Unicode glyphs
 let g:Powerline_symbols = 'fancy'
 
 " Command T ignore
-set wildignore+=**/kohana/**,wp/**,wp-admin/**,wp-includes/**,.git/**,.svn/**,*.png,*.jpg,*.swf,*.gif,*.zip
-
-" PHP Documenter
-nnoremap <silent> <Leader>d :call PhpDoc()<CR>
+set wildignore+=**/node_modules/**,**/kohana/**,wp/**,wp-admin/**,wp-includes/**,.git/**,.svn/**,*.png,*.jpg,*.swf,*.gif,*.zip
 
 " Code Folding
-set foldmethod=syntax
-set foldlevelstart=1
 nmap <Leader>f za
 nmap <Leader>F zA
 nmap <Leader>x zM
