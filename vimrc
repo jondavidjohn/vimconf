@@ -76,6 +76,9 @@ map <Leader>s :SyntasticToggleMode<Enter>
 map <Leader>se :Errors<Enter><Leader>j
 map <Leader>sc :SyntasticCheck<Enter>
 
+" CtrlP
+map <Leader>p :CtrlP<Enter>
+
 " Make Arrows move differently
 nmap <Up> 10k
 nmap <Down> 10j
@@ -87,6 +90,9 @@ nmap > >>
 nmap < <<
 vmap > >gv
 vmap < <gv
+
+" NERDCommenter
+map <Leader>_ :hello
 
 " Tab Usage
 map <Leader>] :tabn<enter>
@@ -112,7 +118,7 @@ set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 let g:Powerline_symbols = 'fancy'
 
-" Command T ignore
+" CtrlP ignore
 set wildignore+=**/node_modules/**,**/kohana/**,wp/**,wp-admin/**,wp-includes/**,.git/**,.svn/**,*.png,*.jpg,*.swf,*.gif,*.zip
 
 " Code Folding

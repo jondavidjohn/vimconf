@@ -73,18 +73,18 @@
 [submodule "bundle/vim-coffee-script"]
   path = bundle/vim-coffee-script
   url = git@github.com:kchmck/vim-coffee-script.git
+  ignore = untracked
 [submodule "autoload/pathogen"]
   path = autoload/pathogen
   url = git@github.com:tpope/vim-pathogen.git
-[submodule "bundle/nerdcommenter"]
-  path = bundle/nerdcommenter
-  url = git@github.com:scrooloose/nerdcommenter.git
+  ignore = untracked
 [submodule "bundle/emmet-vim"]
   path = bundle/emmet-vim
   url = git@github.com:mattn/emmet-vim.git
 [submodule "bundle/node.vim"]
   path = bundle/node.vim
   url = git@github.com:moll/vim-node.git
+  ignore = untracked
 [submodule "bundle/vim-web-indent"]
   path = bundle/vim-web-indent
   url = git@github.com:lukaszb/vim-web-indent.git
@@ -100,4 +100,8 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = git@github.com:kien/ctrlp.vim.git
+  ignore = untracked
+[submodule "bundle/commentary"]
+	path = bundle/commentary
+	url = git@github.com:tpope/vim-commentary.git
   ignore = untracked
