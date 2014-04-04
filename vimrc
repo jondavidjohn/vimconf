@@ -1,6 +1,9 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+" turn off swapfiles for now
+set noswapfile
+
 " Turn on line numbering. Turn it off with set nonu
 set nu
 
@@ -12,7 +15,7 @@ syntax enable
 
 " " Indent automatically depending on filetype
 filetype plugin on
-set cindent
+set smartindent
 set backspace=indent,eol,start
 set title titlestring=
 
@@ -31,6 +34,7 @@ highlight Search ctermbg=11 ctermfg=0
 "let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set cursorline
 set cc=80
+hi SignColumn ctermbg=233
 hi ColorColumn ctermbg=233
 hi clear CursorLine
 hi CursorLine ctermbg=233
@@ -51,8 +55,9 @@ highlight EndSpaces ctermbg=88 ctermfg=255
 match EndSpaces /\s\+$/
 hi MatchParen ctermbg=196 ctermfg=255
 
-let g:syntastic_check_on_open=1
-let g:syntastic_python_checker_args = " --ignore=E501,W402 "
+" Gists config
+let g:gist_post_private = 1
+let g:gist_open_browser_after_post = 1
 
 """ Mappings
 let mapleader=" "
@@ -72,9 +77,12 @@ set splitright
 nnoremap <Leader>; A;<Esc>
 
 " Syntastic
+let g:syntastic_check_on_open=1
+let g:syntastic_python_checker_args = " --ignore=E501,W402 "
 map <Leader>s :SyntasticToggleMode<Enter>
 map <Leader>se :Errors<Enter><Leader>j
 map <Leader>sc :SyntasticCheck<Enter>
+
 
 " CtrlP
 map <Leader>p :CtrlP<Enter>
@@ -90,9 +98,6 @@ nmap > >>
 nmap < <<
 vmap > >gv
 vmap < <gv
-
-" NERDCommenter
-map <Leader>_ :hello
 
 " Tab Usage
 map <Leader>] :tabn<enter>
