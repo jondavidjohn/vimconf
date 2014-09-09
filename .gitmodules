@@ -81,6 +81,7 @@
 [submodule "bundle/emmet-vim"]
   path = bundle/emmet-vim
   url = git@github.com:mattn/emmet-vim.git
+  ignore = untracked
 [submodule "bundle/node.vim"]
   path = bundle/node.vim
   url = git@github.com:moll/vim-node.git
@@ -101,10 +102,6 @@
   path = bundle/ctrlp
   url = git@github.com:kien/ctrlp.vim.git
   ignore = untracked
-[submodule "bundle/commentary"]
-  path = bundle/commentary
-  url = git@github.com:tpope/vim-commentary.git
-  ignore = untracked
 [submodule "bundle/gist-vim"]
   path = bundle/gist-vim
   url = git@github.com:mattn/gist-vim.git
@@ -117,7 +114,15 @@
   path = bundle/vim-gitgutter
   url = git@github.com:airblade/vim-gitgutter.git
   ignore = untracked
-[submodule "bundle/tern_for_vim"]
-  path = bundle/tern_for_vim
-  url = git@github.com:marijnh/tern_for_vim.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = git@github.com:groenewege/vim-less.git
+  ignore = untracked
+[submodule "bundle/vim-swift"]
+	path = bundle/vim-swift
+	url = git://github.com/toyamarinyon/vim-swift.git
+  ignore = untracked
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git@github.com:majutsushi/tagbar.git
   ignore = untracked

@@ -42,6 +42,10 @@ hi CursorLineNr term=bold ctermfg=red ctermbg=233
 hi LineNr ctermfg=darkgrey
 hi FoldColumn ctermbg=yellow ctermfg=black
 hi Folded ctermbg=yellow ctermfg=black
+hi DiffAdd      ctermbg=7 ctermbg=22
+hi DiffChange   ctermbg=33
+hi DiffDelete   ctermfg=7 ctermbg=88
+hi DiffText     ctermbg=172
 set clipboard=unnamed
 set visualbell t_vb=    " turn off error beep/flash
 set novisualbell        " turn off visual bell
@@ -54,6 +58,13 @@ hi SpecialKey ctermbg=none ctermfg=232
 highlight EndSpaces ctermbg=88 ctermfg=255
 match EndSpaces /\s\+$/
 hi MatchParen ctermbg=196 ctermfg=255
+
+" Relative Line Numbering (Normal Mode)
+autocmd FocusLost * :set number
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
+autocmd CursorMoved * :set relativenumber
+
 
 " Gists config
 let g:gist_post_private = 1
