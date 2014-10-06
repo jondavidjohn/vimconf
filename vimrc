@@ -89,6 +89,7 @@ nnoremap <Leader>; A;<Esc>
 
 " Syntastic
 let g:syntastic_check_on_open=1
+let g:syntastic_javascript_checkers = ['jsxhint']
 let g:syntastic_python_checker_args = " --ignore=E501,W402 "
 map <Leader>s :SyntasticToggleMode<Enter>
 map <Leader>se :Errors<Enter><Leader>j

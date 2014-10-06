@@ -126,3 +126,9 @@
 	path = bundle/tagbar
 	url = git@github.com:majutsushi/tagbar.git
   ignore = untracked
+[submodule "bundle/vim-jsx"]
+	path = bundle/vim-jsx
+	url = git@github.com:mxw/vim-jsx.git
+[submodule "bundle/vim-cjsx"]
+	path = bundle/vim-cjsx
+	url = git@github.com:mtscout6/vim-cjsx.git
