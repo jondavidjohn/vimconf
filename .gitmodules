@@ -132,3 +132,6 @@
 [submodule "bundle/vim-cjsx"]
 	path = bundle/vim-cjsx
 	url = git@github.com:mtscout6/vim-cjsx.git
+[submodule "bundle/vim-liquid"]
+	path = bundle/vim-liquid
+	url = git@github.com:tpope/vim-liquid.git
