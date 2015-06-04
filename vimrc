@@ -7,9 +7,6 @@ set noswapfile
 " Turn on line numbering. Turn it off with set nonu
 set nu
 
-" Keep pwd in step with open file
-"autocmd BufEnter * silent! lcd %:p:h
-
 " " Set syntax on
 syntax enable
 
@@ -30,8 +27,6 @@ colorscheme slate
 set hls
 highlight Search ctermbg=11 ctermfg=0
 
-"let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-"let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set cursorline
 set cc=80
 hi SignColumn ctermbg=233
@@ -40,8 +35,6 @@ hi clear CursorLine
 hi CursorLine ctermbg=233
 hi CursorLineNr term=bold ctermfg=red ctermbg=233
 hi LineNr ctermfg=darkgrey
-hi FoldColumn ctermbg=yellow ctermfg=black
-hi Folded ctermbg=yellow ctermfg=black
 hi DiffAdd      ctermbg=7 ctermbg=22
 hi DiffChange   ctermbg=33
 hi DiffDelete   ctermfg=7 ctermbg=88
@@ -78,14 +71,10 @@ map <Leader>k <C-w><Up>
 map <Leader>j <C-w><Down>
 map <Leader>l <C-w><Right>
 map <Leader>h <C-w><Left>
+
 " Use more natural splitting
 set splitbelow
 set splitright
-
-" auto set paste (disable indent on cmd-v)
-
-" auto semicolon EOL
-nnoremap <Leader>; A;<Esc>
 
 " Syntastic
 let g:syntastic_check_on_open=1
@@ -94,7 +83,6 @@ let g:syntastic_python_checker_args = " --ignore=E501,W402 "
 map <Leader>s :SyntasticToggleMode<Enter>
 map <Leader>se :Errors<Enter><Leader>j
 map <Leader>sc :SyntasticCheck<Enter>
-
 
 " CtrlP
 map <Leader>p :CtrlP<Enter>
@@ -112,6 +100,7 @@ vmap > >gv
 vmap < <gv
 
 " Tab Usage
+map <Leader>t :tabnew .<enter>
 map <Leader>] :tabn<enter>
 map <Leader>[ :tabp<enter>
 
@@ -129,20 +118,12 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 nnoremap <silent> <Leader>sw :call <SID>StripTrailingWhitespaces()<CR>
 
-" PowerLine Config
-set nocompatible   " Disable vi-compatibility
-set laststatus=2   " Always show the statusline
-set encoding=utf-8 " Necessary to show Unicode glyphs
-let g:Powerline_symbols = 'fancy'
-
 " CtrlP ignore
-set wildignore+=**/node_modules/**,**/kohana/**,wp/**,wp-admin/**,wp-includes/**,.git/**,.svn/**,*.png,*.jpg,*.swf,*.gif,*.zip
-
-" Code Folding
-nmap <Leader>f za
-nmap <Leader>F zA
-nmap <Leader>x zM
-nmap <Leader>e zR
+set wildignore+=**/_site/**,**/node_modules/**,**/kohana/**,wp/**,wp-admin/**,wp-includes/**,.git/**,.svn/**,*.png,*.jpg,*.swf,*.gif,*.zip
 
 " Preview current file in Chrome
 nmap <Leader>P :!open -g -a "Google Chrome" %;<CR>
+
+" Airline
+set laststatus=2
+set ttimeoutlen=50
