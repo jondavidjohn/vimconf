@@ -8,7 +8,7 @@ set noswapfile
 set nu
 
 " " Set syntax on
-syntax enable
+syntax on
 
 " " Indent automatically depending on filetype
 filetype plugin on
@@ -20,7 +20,6 @@ set title titlestring=
 set ic
 
 " Change colorscheme from defaults
-set t_Co=256
 colorscheme slate
 
 " Higlhight search
@@ -58,7 +57,6 @@ autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 autocmd CursorMoved * :set relativenumber
 
-
 " Gists config
 let g:gist_post_private = 1
 let g:gist_open_browser_after_post = 1
@@ -78,7 +76,6 @@ set splitright
 
 " Syntastic
 let g:syntastic_check_on_open=1
-let g:syntastic_javascript_checkers = ['jsxhint']
 let g:syntastic_python_checker_args = " --ignore=E501,W402 "
 map <Leader>s :SyntasticToggleMode<Enter>
 map <Leader>se :Errors<Enter><Leader>j
