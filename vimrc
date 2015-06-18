@@ -20,24 +20,27 @@ set title titlestring=
 set ic
 
 " Change colorscheme from defaults
-colorscheme slate
+let ruby_operators = 1
+let g:solarized_bold=1
+let g:solarized_underline=1
+let g:solarized_contrast="low"
+set background=dark
+colorscheme solarized
+hi rubyConstant ctermfg=9
+hi rubySymbol ctermfg=3
+hi rubyStringDelimiter ctermfg=6
 
 " Higlhight search
 set hls
-highlight Search ctermbg=11 ctermfg=0
+highlight Search ctermbg=red
 
 set cursorline
 set cc=80
-hi SignColumn ctermbg=233
-hi ColorColumn ctermbg=233
+hi SignColumn ctermbg=black
+hi ColorColumn ctermbg=8
 hi clear CursorLine
-hi CursorLine ctermbg=233
-hi CursorLineNr term=bold ctermfg=red ctermbg=233
-hi LineNr ctermfg=darkgrey
-hi DiffAdd      ctermbg=7 ctermbg=22
-hi DiffChange   ctermbg=33
-hi DiffDelete   ctermfg=7 ctermbg=88
-hi DiffText     ctermbg=172
+hi CursorLine ctermbg=8
+hi CursorLineNr term=bold ctermfg=red
 set clipboard=unnamed
 set visualbell t_vb=    " turn off error beep/flash
 set novisualbell        " turn off visual bell
@@ -47,15 +50,9 @@ set expandtab
 set list
 set listchars=tab:\|\ ,trail:-
 hi SpecialKey ctermbg=none ctermfg=232
-highlight EndSpaces ctermbg=88 ctermfg=255
+highlight EndSpaces ctermbg=red ctermfg=255
 match EndSpaces /\s\+$/
 hi MatchParen ctermbg=196 ctermfg=255
-
-" Relative Line Numbering (Normal Mode)
-autocmd FocusLost * :set number
-autocmd InsertEnter * :set number
-autocmd InsertLeave * :set relativenumber
-autocmd CursorMoved * :set relativenumber
 
 " Gists config
 let g:gist_post_private = 1
@@ -77,9 +74,12 @@ set splitright
 " Syntastic
 let g:syntastic_check_on_open=1
 let g:syntastic_python_checker_args = " --ignore=E501,W402 "
+let g:syntastic_ruby_rubocop_exec = "/Users/jon/.rbenv/shims/rubocop-git --hound"
 map <Leader>s :SyntasticToggleMode<Enter>
 map <Leader>se :Errors<Enter><Leader>j
 map <Leader>sc :SyntasticCheck<Enter>
+
+
 
 " CtrlP
 map <Leader>p :CtrlP<Enter>
@@ -124,3 +124,8 @@ nmap <Leader>P :!open -g -a "Google Chrome" %;<CR>
 " Airline
 set laststatus=2
 set ttimeoutlen=50
+
+" Rspec
+map <Leader>a :call RunCurrentSpecFile()<CR>
+map <Leader>t :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>

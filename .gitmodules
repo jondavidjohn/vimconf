@@ -119,3 +119,15 @@
 [submodule "bundle/rails.vim"]
 	path = bundle/rails.vim
 	url = git@github.com:tpope/vim-rails.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/tomdoc-highlight"]
+	path = bundle/tomdoc-highlight
+	url = git@github.com:wellbredgrapefruit/tomdoc.vim.git
+[submodule "bundle/tomdoc"]
+	path = bundle/tomdoc
+	url = git@github.com:jc00ke/vim-tomdoc.git
+[submodule "bundle/vim-rspec"]
+	path = bundle/vim-rspec
+	url = git@github.com:thoughtbot/vim-rspec.git
