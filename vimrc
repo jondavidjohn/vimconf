@@ -133,3 +133,6 @@ set ttimeoutlen=50
 let g:rspec_command = ':w | ! cd `git root` && bin/rspec -I . -f d {spec}'
 map <Leader>ta :call RunCurrentSpecFile()<CR>
 map <Leader>tt :call RunNearestSpec()<CR>
+
+" Rails
+map <Leader>a :A
