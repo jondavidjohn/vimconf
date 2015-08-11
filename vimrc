@@ -35,7 +35,7 @@ set hls
 highlight Search ctermbg=red
 
 set cursorline
-set cc=80
+set cc=100
 hi SignColumn ctermbg=black
 hi ColorColumn ctermbg=8
 hi clear CursorLine
@@ -60,6 +60,11 @@ let g:gist_open_browser_after_post = 1
 
 """ Mappings
 let mapleader=" "
+map <Leader>b <C-^>
+
+" working with this file
+map <Leader>rc :vs $MYVIMRC<Enter>
+map <Leader>src :so $MYVIMRC<Enter>
 
 " Buffer Navigation
 map <Leader>k <C-w><Up>
@@ -79,10 +84,15 @@ map <Leader>s :SyntasticToggleMode<Enter>
 map <Leader>se :Errors<Enter><Leader>j
 map <Leader>sc :SyntasticCheck<Enter>
 
-
-
 " CtrlP
+let g:ctrlp_working_path_mode = 'ra'
+set wildignore+=**/sprockets/**,**/vendor/**,**/_site/**,**/log/**,**/node_modules/**,**/kohana/**,**/wp/**,**/wp-admin/**,**/wp-includes/**,**/.git/**,.svn/**,*.png,*.pdf,*.svg,*.jpg,*.swf,*.gif,*.zip
 map <Leader>p :CtrlP<Enter>
+map <Leader>pv :CtrlP app/views<Enter>
+map <Leader>pc :CtrlP app/controllers<Enter>
+map <Leader>pm :CtrlP app/models<Enter>
+map <Leader>ps :CtrlP spec<Enter>
+map <Leader>pl :CtrlP lib<Enter>
 
 " Make Arrows move differently
 nmap <Up> 10k
@@ -97,7 +107,7 @@ vmap > >gv
 vmap < <gv
 
 " Tab Usage
-map <Leader>t :tabnew .<enter>
+map <Leader>tn :tabnew .<enter>
 map <Leader>] :tabn<enter>
 map <Leader>[ :tabp<enter>
 
@@ -115,17 +125,11 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 nnoremap <silent> <Leader>sw :call <SID>StripTrailingWhitespaces()<CR>
 
-" CtrlP ignore
-set wildignore+=**/_site/**,**/node_modules/**,**/kohana/**,wp/**,wp-admin/**,wp-includes/**,.git/**,.svn/**,*.png,*.jpg,*.swf,*.gif,*.zip
-
-" Preview current file in Chrome
-nmap <Leader>P :!open -g -a "Google Chrome" %;<CR>
-
 " Airline
 set laststatus=2
 set ttimeoutlen=50
 
 " Rspec
-map <Leader>a :call RunCurrentSpecFile()<CR>
-map <Leader>t :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
+let g:rspec_command = ':w | ! cd `git root` && bin/rspec -I . -f d {spec}'
+map <Leader>ta :call RunCurrentSpecFile()<CR>
+map <Leader>tt :call RunNearestSpec()<CR>
