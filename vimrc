@@ -11,7 +11,7 @@ set nu
 syntax on
 
 " " Indent automatically depending on filetype
-filetype plugin on
+filetype plugin indent on
 set smartindent
 set backspace=indent,eol,start
 set title titlestring=
@@ -62,10 +62,6 @@ let g:gist_open_browser_after_post = 1
 let mapleader=" "
 map <Leader>b <C-^>
 
-" working with this file
-map <Leader>rc :vs $MYVIMRC<Enter>
-map <Leader>src :so $MYVIMRC<Enter>
-
 " Buffer Navigation
 map <Leader>k <C-w><Up>
 map <Leader>j <C-w><Down>
@@ -107,7 +103,7 @@ vmap > >gv
 vmap < <gv
 
 " Tab Usage
-map <Leader>tn :tabnew .<enter>
+map <Leader>n :tabnew .<enter>
 map <Leader>] :tabn<enter>
 map <Leader>[ :tabp<enter>
 
@@ -129,10 +125,6 @@ nnoremap <silent> <Leader>sw :call <SID>StripTrailingWhitespaces()<CR>
 set laststatus=2
 set ttimeoutlen=50
 
-" Rspec
-let g:rspec_command = ':w | ! cd `git root` && bin/rspec -I . -f d {spec}'
-map <Leader>ta :call RunCurrentSpecFile()<CR>
-map <Leader>tt :call RunNearestSpec()<CR>
-
-" Rails
-map <Leader>a :A
+" Local vimrc
+let g:localvimrc_whitelist='/Users/jon/Source/.*'
+let g:localvimrc_sandbox = 0

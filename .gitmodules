@@ -6,10 +6,6 @@
   path = bundle/repmo
   url = git://github.com/vim-scripts/repmo.vim.git
   ignore = untracked
-[submodule "bundle/vim-autoclose"]
-  path = bundle/vim-autoclose
-  url = git://github.com/Townk/vim-autoclose.git
-  ignore = untracked
 [submodule "bundle/ack"]
   path = bundle/ack
   url = git://github.com/mileszs/ack.vim.git
@@ -131,9 +127,18 @@
 [submodule "bundle/vim-rspec"]
 	path = bundle/vim-rspec
 	url = git@github.com:thoughtbot/vim-rspec.git
-[submodule "bundle/vim-dispatch"]
-	path = bundle/vim-dispatch
-	url = git@github.com:tpope/vim-dispatch.git
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = git@github.com:tpope/vim-rails.git
+[submodule "bundle/vim-rake"]
+	path = bundle/vim-rake
+	url = git@github.com:tpope/vim-rake.git
+[submodule "bundle/vim-localvimrc"]
+	path = bundle/vim-localvimrc
+	url = git@github.com:embear/vim-localvimrc.git
+[submodule "bundle/auto-pairs"]
+	path = bundle/auto-pairs
+	url = git@github.com:jiangmiao/auto-pairs.git
+[submodule "bundle/vim-endwise"]
+	path = bundle/vim-endwise
+	url = git@github.com:tpope/vim-endwise.git
