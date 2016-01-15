@@ -6,10 +6,6 @@
   path = bundle/repmo
   url = git://github.com/vim-scripts/repmo.vim.git
   ignore = untracked
-[submodule "bundle/ack"]
-  path = bundle/ack
-  url = git://github.com/mileszs/ack.vim.git
-  ignore = untracked
 [submodule "bundle/nerdtree"]
   path = bundle/nerdtree
   url = git://github.com/scrooloose/nerdtree.git
@@ -82,60 +78,75 @@
   path = bundle/vim-gitgutter
   url = git@github.com:airblade/vim-gitgutter.git
   ignore = untracked
-[submodule "bundle/vim-less"]
-	path = bundle/vim-less
-	url = git@github.com:groenewege/vim-less.git
-  ignore = untracked
 [submodule "bundle/vim-swift"]
-	path = bundle/vim-swift
-	url = git://github.com/toyamarinyon/vim-swift.git
+  path = bundle/vim-swift
+  url = git://github.com/toyamarinyon/vim-swift.git
   ignore = untracked
 [submodule "bundle/vim-jsx"]
-	path = bundle/vim-jsx
-	url = git@github.com:mxw/vim-jsx.git
+  path = bundle/vim-jsx
+  url = git@github.com:mxw/vim-jsx.git
   ignore = untracked
 [submodule "bundle/vim-cjsx"]
-	path = bundle/vim-cjsx
-	url = git@github.com:mtscout6/vim-cjsx.git
+  path = bundle/vim-cjsx
+  url = git@github.com:mtscout6/vim-cjsx.git
   ignore = untracked
 [submodule "bundle/vim-liquid"]
-	path = bundle/vim-liquid
-	url = git@github.com:tpope/vim-liquid.git
+  path = bundle/vim-liquid
+  url = git@github.com:tpope/vim-liquid.git
   ignore = untracked
 [submodule "bundle/php.vim"]
-	path = bundle/php.vim
-	url = git@github.com:StanAngeloff/php.vim.git
+  path = bundle/php.vim
+  url = git@github.com:StanAngeloff/php.vim.git
   ignore = untracked
 [submodule "bundle/airline"]
-	path = bundle/airline
-	url = git@github.com:bling/vim-airline.git
+  path = bundle/airline
+  url = git@github.com:bling/vim-airline.git
+  ignore = untracked
 [submodule "bundle/rails.vim"]
-	path = bundle/rails.vim
-	url = git@github.com:tpope/vim-rails.git
+  path = bundle/rails.vim
+  url = git@github.com:tpope/vim-rails.git
+  ignore = untracked
 [submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+  path = bundle/vim-colors-solarized
+  url = git://github.com/altercation/vim-colors-solarized.git
+  ignore = untracked
 [submodule "bundle/tomdoc-highlight"]
-	path = bundle/tomdoc-highlight
-	url = git@github.com:wellbredgrapefruit/tomdoc.vim.git
+  path = bundle/tomdoc-highlight
+  url = git@github.com:wellbredgrapefruit/tomdoc.vim.git
+  ignore = untracked
 [submodule "bundle/tomdoc"]
-	path = bundle/tomdoc
-	url = git@github.com:jc00ke/vim-tomdoc.git
+  path = bundle/tomdoc
+  url = git@github.com:jc00ke/vim-tomdoc.git
+  ignore = untracked
 [submodule "bundle/vim-rspec"]
-	path = bundle/vim-rspec
-	url = git@github.com:thoughtbot/vim-rspec.git
+  path = bundle/vim-rspec
+  url = git@github.com:thoughtbot/vim-rspec.git
+  ignore = untracked
 [submodule "bundle/vim-rails"]
-	path = bundle/vim-rails
-	url = git@github.com:tpope/vim-rails.git
+  path = bundle/vim-rails
+  url = git@github.com:tpope/vim-rails.git
+  ignore = untracked
 [submodule "bundle/vim-rake"]
-	path = bundle/vim-rake
-	url = git@github.com:tpope/vim-rake.git
+  path = bundle/vim-rake
+  url = git@github.com:tpope/vim-rake.git
+  ignore = untracked
 [submodule "bundle/vim-localvimrc"]
-	path = bundle/vim-localvimrc
-	url = git@github.com:embear/vim-localvimrc.git
+  path = bundle/vim-localvimrc
+  url = git@github.com:embear/vim-localvimrc.git
+  ignore = untracked
 [submodule "bundle/auto-pairs"]
-	path = bundle/auto-pairs
-	url = git@github.com:jiangmiao/auto-pairs.git
+  path = bundle/auto-pairs
+  url = git@github.com:jiangmiao/auto-pairs.git
+  ignore = untracked
 [submodule "bundle/vim-endwise"]
-	path = bundle/vim-endwise
-	url = git@github.com:tpope/vim-endwise.git
+  path = bundle/vim-endwise
+  url = git@github.com:tpope/vim-endwise.git
+  ignore = untracked
+[submodule "bundle/vim-apib"]
+  path = bundle/vim-apib
+  url = git@github.com:lrampa/vim-apib.git
+  ignore = untracked
+[submodule "bundle/ag.vim"]
+  path = bundle/ag.vim
+  url = git@github.com:rking/ag.vim.git
+  ignore = untracked

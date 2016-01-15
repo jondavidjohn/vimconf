@@ -81,14 +81,11 @@ map <Leader>se :Errors<Enter><Leader>j
 map <Leader>sc :SyntasticCheck<Enter>
 
 " CtrlP
-let g:ctrlp_working_path_mode = 'ra'
-set wildignore+=**/sprockets/**,**/vendor/**,**/_site/**,**/log/**,**/node_modules/**,**/kohana/**,**/wp/**,**/wp-admin/**,**/wp-includes/**,**/.git/**,.svn/**,*.png,*.pdf,*.svg,*.jpg,*.swf,*.gif,*.zip
+let g:ctrlp_working_path_mode = 'r'
+set wildignore+=**/public/**,**/engines/**,**/tmp/**,**/sprockets/**,**/vendor/**,**/_site/**,**/log/**,**/node_modules/**,**/kohana/**,**/wp/**,**/wp-admin/**,**/wp-includes/**,**/.git/**,.svn/**,*.png,*.pdf,*.svg,*.jpg,*.swf,*.gif,*.zip,*.gz
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_use_caching = 0
 map <Leader>p :CtrlP<Enter>
-map <Leader>pv :CtrlP app/views<Enter>
-map <Leader>pc :CtrlP app/controllers<Enter>
-map <Leader>pm :CtrlP app/models<Enter>
-map <Leader>ps :CtrlP spec<Enter>
-map <Leader>pl :CtrlP lib<Enter>
 
 " Make Arrows move differently
 nmap <Up> 10k
@@ -128,3 +125,10 @@ set ttimeoutlen=50
 " Local vimrc
 let g:localvimrc_whitelist='/Users/jon/Source/.*'
 let g:localvimrc_sandbox = 0
+
+let g:jsx_ext_required = 0
+
+"Ag config
+let g:ag_working_path_mode="r"
+let g:ag_prg="ag --literal"
+set grepprg=ag\ --nogroup\ --nocolor
