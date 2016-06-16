@@ -20,15 +20,8 @@ set title titlestring=
 set ic
 
 " Change colorscheme from defaults
-let ruby_operators = 1
-let g:solarized_bold=1
-let g:solarized_underline=1
-let g:solarized_contrast="low"
 set background=dark
-colorscheme solarized
-hi rubyConstant ctermfg=9
-hi rubySymbol ctermfg=3
-hi rubyStringDelimiter ctermfg=6
+colorscheme base16-ocean
 
 " Higlhight search
 set hls
@@ -36,11 +29,7 @@ highlight Search ctermbg=red
 
 set cursorline
 set cc=100
-hi SignColumn ctermbg=black
-hi ColorColumn ctermbg=8
 hi clear CursorLine
-hi CursorLine ctermbg=8
-hi CursorLineNr term=bold ctermfg=red
 set clipboard=unnamed
 set visualbell t_vb=    " turn off error beep/flash
 set novisualbell        " turn off visual bell
@@ -49,10 +38,11 @@ set shiftwidth=2
 set expandtab
 set list
 set listchars=tab:\|\ ,trail:-
-hi SpecialKey ctermbg=none ctermfg=232
-highlight EndSpaces ctermbg=red ctermfg=255
+highlight EndSpaces ctermbg=red ctermfg=white
 match EndSpaces /\s\+$/
-hi MatchParen ctermbg=196 ctermfg=255
+let g:gitgutter_sign_column_always = 1
+hi SpecialKey ctermbg=none ctermfg=232
+hi Sign ctermbg=none
 
 " Gists config
 let g:gist_post_private = 1
