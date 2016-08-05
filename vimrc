@@ -29,7 +29,6 @@ highlight Search ctermbg=red
 
 set cursorline
 set cc=100
-hi clear CursorLine
 set clipboard=unnamed
 set visualbell t_vb=    " turn off error beep/flash
 set novisualbell        " turn off visual bell
