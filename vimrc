@@ -116,6 +116,7 @@ nnoremap <silent> <Leader>sw :call <SID>StripTrailingWhitespaces()<CR>
 " Airline
 set laststatus=2
 set ttimeoutlen=50
+let g:airline_section_x = ''
 
 " Local vimrc
 let g:localvimrc_whitelist='/Users/jon/Source/.*'
