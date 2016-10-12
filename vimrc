@@ -1,6 +1,9 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+let html_wrong_comments=1
+set re=1
+
 " turn off swapfiles for now
 set noswapfile
 
@@ -56,6 +59,9 @@ map <Leader>k <C-w><Up>
 map <Leader>j <C-w><Down>
 map <Leader>l <C-w><Right>
 map <Leader>h <C-w><Left>
+map <Leader>= <C-w>=
+map <Leader>+ <C-w>+
+map <Leader>- <C-w>-
 
 " Use more natural splitting
 set splitbelow
