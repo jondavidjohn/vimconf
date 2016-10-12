@@ -150,3 +150,6 @@
 	path = bundle/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
   ignore = untracked
+[submodule "bundle/airline-themes"]
+	path = bundle/airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git

@@ -116,7 +116,11 @@ nnoremap <silent> <Leader>sw :call <SID>StripTrailingWhitespaces()<CR>
 " Airline
 set laststatus=2
 set ttimeoutlen=50
-let g:airline_section_x = ''
+let g:airline_theme='base16_tomorrow'
+function! AirlineInit()
+  let g:airline_section_x = airline#section#create(['%{strftime("%H:%M")}'])
+endfunction
+autocmd VimEnter * call AirlineInit()
 
 " Local vimrc
 let g:localvimrc_whitelist='/Users/jon/Source/.*'
