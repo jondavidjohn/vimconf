@@ -60,7 +60,7 @@
   ignore = untracked
 [submodule "bundle/ctrlp"]
   path = bundle/ctrlp
-  url = git@github.com:kien/ctrlp.vim.git
+  url = git@github.com:ctrlpvim/ctrlp.vim.git
   ignore = untracked
 [submodule "bundle/gist-vim"]
   path = bundle/gist-vim
@@ -135,21 +135,26 @@
   url = git@github.com:rking/ag.vim.git
   ignore = untracked
 [submodule "bundle/base16-vim"]
-	path = bundle/base16-vim
-	url = https://github.com/chriskempson/base16-vim.git
+  path = bundle/base16-vim
+  url = https://github.com/chriskempson/base16-vim.git
   ignore = untracked
 [submodule "bundle/vim-blade"]
-	path = bundle/vim-blade
-	url = git://github.com/jwalton512/vim-blade.git
+  path = bundle/vim-blade
+  url = git://github.com/jwalton512/vim-blade.git
   ignore = untracked
 [submodule "bundle/vim-rooter"]
-	path = bundle/vim-rooter
-	url = git@github.com:airblade/vim-rooter.git
+  path = bundle/vim-rooter
+  url = git@github.com:airblade/vim-rooter.git
   ignore = untracked
 [submodule "bundle/editorconfig-vim"]
-	path = bundle/editorconfig-vim
-	url = git@github.com:editorconfig/editorconfig-vim.git
+  path = bundle/editorconfig-vim
+  url = git@github.com:editorconfig/editorconfig-vim.git
   ignore = untracked
 [submodule "bundle/airline-themes"]
-	path = bundle/airline-themes
-	url = git@github.com:vim-airline/vim-airline-themes.git
+  path = bundle/airline-themes
+  url = git@github.com:vim-airline/vim-airline-themes.git
+  ignore = untracked
+[submodule "bundle/tagbar"]
+  path = bundle/tagbar
+  url = git@github.com:majutsushi/tagbar.git
+  ignore = untracked
