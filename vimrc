@@ -1,6 +1,7 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+let g:jsx_ext_required = 0
 let html_wrong_comments=1
 set re=1
 
@@ -77,8 +78,7 @@ map <Leader>sc :SyntasticCheck<Enter>
 
 " CtrlP
 let g:ctrlp_working_path_mode = 'r'
-set wildignore+=**/public/**,**/engines/**,**/tmp/**,**/sprockets/**,**/vendor/**,**/_site/**,**/log/**,**/node_modules/**,**/kohana/**,**/wp/**,**/wp-admin/**,**/wp-includes/**,**/.git/**,.svn/**,*.png,*.pdf,*.svg,*.jpg,*.swf,*.gif,*.zip,*.gz
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:ctrlp_use_caching = 0
 map <Leader>p :CtrlP<Enter>
 
@@ -126,9 +126,10 @@ autocmd VimEnter * call AirlineInit()
 let g:localvimrc_whitelist='/Users/jon/Source/.*'
 let g:localvimrc_sandbox = 0
 
-let g:jsx_ext_required = 0
-
 "Ag config
 let g:ag_working_path_mode="r"
 let g:ag_prg="ag --literal"
 set grepprg=ag\ --nogroup\ --nocolor
+
+"Tags
+map <Leader>d <C-]>
