@@ -2,7 +2,9 @@ call pathogen#infect()
 call pathogen#helptags()
 
 let g:jsx_ext_required = 0
-let html_wrong_comments=1
+let html_wrong_comments = 1
+
+" use old regex engine (better ruby performance)
 set re=1
 
 " turn off swapfiles for now
@@ -80,6 +82,7 @@ map <Leader>sc :SyntasticCheck<Enter>
 let g:ctrlp_working_path_mode = 'r'
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:ctrlp_use_caching = 0
+let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
 map <Leader>p :CtrlP<Enter>
 
 " Make Arrows move differently
@@ -126,10 +129,19 @@ autocmd VimEnter * call AirlineInit()
 let g:localvimrc_whitelist='/Users/jon/Source/.*'
 let g:localvimrc_sandbox = 0
 
-"Ag config
+" Ag config
 let g:ag_working_path_mode="r"
 let g:ag_prg="ag --literal"
 set grepprg=ag\ --nogroup\ --nocolor
 
-"Tags
-map <Leader>d <C-]>
+" Tags
+map <Leader>mm <C-]>
+map <Leader>mv :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+map <Leader>ms <C-w><C-]>
+
+" Tagbar
+map <Leader>mb :TagbarToggle<CR>
+let g:tagbar_left = 1
+let g:tagbar_show_visibility = 1
+let g:tagbar_compact = 1
+let g:tagbar_autoclose = 1
