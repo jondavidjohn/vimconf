@@ -121,7 +121,7 @@ set laststatus=2
 set ttimeoutlen=50
 let g:airline_theme='base16_tomorrow'
 function! AirlineInit()
-  let g:airline_section_x = airline#section#create(['%{strftime("%H:%M")}'])
+  let g:airline_section_y = airline#section#create(['%{strftime("%k:%M")}'])
 endfunction
 autocmd VimEnter * call AirlineInit()
 
