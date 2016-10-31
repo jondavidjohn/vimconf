@@ -161,3 +161,6 @@
 [submodule "bundle/ctrlp-cmatcher"]
 	path = bundle/ctrlp-cmatcher
 	url = git@github.com:JazzCore/ctrlp-cmatcher.git
+[submodule "bundle/vimux"]
+	path = bundle/vimux
+	url = https://github.com/benmills/vimux.git

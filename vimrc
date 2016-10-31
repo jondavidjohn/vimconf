@@ -46,7 +46,7 @@ set listchars=tab:\|\ ,trail:-
 highlight EndSpaces ctermbg=red ctermfg=white
 match EndSpaces /\s\+$/
 let g:gitgutter_sign_column_always = 1
-hi SpecialKey ctermbg=none ctermfg=232
+hi SpecialKey ctermbg=none ctermfg=10
 hi Sign ctermbg=none
 
 " Gists config
@@ -97,10 +97,9 @@ nmap < <<
 vmap > >gv
 vmap < <gv
 
-" Tab Usage
-map <Leader>n :tabnew .<enter>
-map <Leader>] :tabn<enter>
-map <Leader>[ :tabp<enter>
+" Buffer Navigation
+map <Leader>] :bnext<Enter>
+map <Leader>[ :bprevious<Enter>
 
 " Strip trailing whitespace
 function! <SID>StripTrailingWhitespaces()
@@ -120,10 +119,7 @@ nnoremap <silent> <Leader>sw :call <SID>StripTrailingWhitespaces()<CR>
 set laststatus=2
 set ttimeoutlen=50
 let g:airline_theme='base16_tomorrow'
-function! AirlineInit()
-  let g:airline_section_y = airline#section#create(['%{strftime("%k:%M")}'])
-endfunction
-autocmd VimEnter * call AirlineInit()
+let g:airline#extensions#tabline#enabled = 1
 
 " Local vimrc
 let g:localvimrc_whitelist='/Users/jon/Source/.*'
@@ -145,3 +141,7 @@ let g:tagbar_left = 1
 let g:tagbar_show_visibility = 1
 let g:tagbar_compact = 1
 let g:tagbar_autoclose = 1
+
+" Vimux
+"
+map <Leader>tz :call VimuxZoomRunner()<CR>
