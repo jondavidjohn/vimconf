@@ -57,7 +57,7 @@ let g:gist_open_browser_after_post = 1
 let mapleader=" "
 map <Leader>b <C-^>
 
-" Buffer Navigation
+" Pane Navigation
 map <Leader>k <C-w><Up>
 map <Leader>j <C-w><Down>
 map <Leader>l <C-w><Right>
@@ -100,6 +100,7 @@ vmap < <gv
 " Buffer Navigation
 map <Leader>] :bnext<Enter>
 map <Leader>[ :bprevious<Enter>
+map <Leader>w :Bdelete<Enter>
 
 " Strip trailing whitespace
 function! <SID>StripTrailingWhitespaces()
