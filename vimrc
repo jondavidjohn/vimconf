@@ -35,7 +35,7 @@ highlight Search ctermbg=red
 
 set cursorline
 set cc=100
-set clipboard=unnamed
+set clipboard^=unnamed
 set visualbell t_vb=    " turn off error beep/flash
 set novisualbell        " turn off visual bell
 set tabstop=2
@@ -146,3 +146,8 @@ let g:tagbar_autoclose = 1
 " Vimux
 "
 map <Leader>tz :call VimuxZoomRunner()<CR>
+
+" Dash
+"
+map <Leader>d :Dash<CR>
+map <Leader>ds :Dash <C-R><C-W> 
