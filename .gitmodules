@@ -1,7 +1,3 @@
-[submodule "bundle/syntastic"]
-  path = bundle/syntastic
-  url = https://github.com/scrooloose/syntastic.git
-  ignore = untracked
 [submodule "bundle/repmo"]
   path = bundle/repmo
   url = https://github.com/vim-scripts/repmo.vim.git
@@ -183,8 +179,14 @@
   url = https://github.com/vim-scripts/matchit.zip.git
   ignore = untracked
 [submodule "bundle/dash.vim"]
-	path = bundle/dash.vim
-	url = https://github.com/rizzatti/dash.vim.git
+  path = bundle/dash.vim
+  url = https://github.com/rizzatti/dash.vim.git
+  ignore = untracked
 [submodule "bundle/vim-slim"]
-	path = bundle/vim-slim
-	url = https://github.com/slim-template/vim-slim.git
+  path = bundle/vim-slim
+  url = https://github.com/slim-template/vim-slim.git
+  ignore = untracked
+[submodule "bundle/vim-ale"]
+  path = bundle/vim-ale
+  url = https://github.com/w0rp/ale.git
+  ignore = untracked
