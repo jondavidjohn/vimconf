@@ -123,10 +123,10 @@ let g:airline_theme='base16_tomorrow'
 let g:airline#extensions#tabline#enabled = 1
 
 " Local vimrc
-let g:localvimrc_whitelist='/Users/jon/Source/.*'
+let g:localvimrc_whitelist='/Users/jon/Code/.*'
 let g:localvimrc_sandbox = 0
 
-" Ag config
+"  Ag config
 let g:ag_working_path_mode="r"
 let g:ag_prg="ag --literal"
 set grepprg=ag\ --nogroup\ --nocolor

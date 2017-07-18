@@ -90,14 +90,6 @@
   path = bundle/rails.vim
   url = https://github.com/tpope/vim-rails.git
   ignore = untracked
-[submodule "bundle/tomdoc-highlight"]
-  path = bundle/tomdoc-highlight
-  url = https://github.com/wellbredgrapefruit/tomdoc.vim.git
-  ignore = untracked
-[submodule "bundle/tomdoc"]
-  path = bundle/tomdoc
-  url = https://github.com/jc00ke/vim-tomdoc.git
-  ignore = untracked
 [submodule "bundle/vim-rspec"]
   path = bundle/vim-rspec
   url = https://github.com/jondavidjohn/vim-rspec.git
