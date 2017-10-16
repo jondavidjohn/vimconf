@@ -63,8 +63,8 @@ map <Leader>j <C-w><Down>
 map <Leader>l <C-w><Right>
 map <Leader>h <C-w><Left>
 map <Leader>= <C-w>=
-map <Leader>+ <C-w>+
-map <Leader>- <C-w>-
+map <Leader>+ :vertical resize +5<CR>
+map <Leader>- :vertical resize -5<CR>
 
 " Use more natural splitting
 set splitbelow
@@ -143,9 +143,18 @@ let g:tagbar_show_visibility = 1
 let g:tagbar_compact = 1
 let g:tagbar_autoclose = 1
 
-" Vimux
+" Vimux / Rails
 "
+let VimuxUseNearest = 1
+let g:vroom_map_keys = 0
+let g:vroom_use_vimux = 1
+let g:vroom_use_spring = 1
+
 map <Leader>tz :call VimuxZoomRunner()<CR>
+map <Leader>tc :call VimuxCloseRunner()<CR>
+map <Leader>ta :VroomRunTestFile<CR>
+map <Leader>tl :VroomRunNearestTest <CR>
+map <Leader>a :A<CR>
 
 " Dash
 "
