@@ -27,7 +27,7 @@ set ic
 
 " Change colorscheme from defaults
 set background=dark
-colorscheme base16-ocean
+colorscheme base16-tomorrow-night
 
 " Higlhight search
 set hls
@@ -116,6 +116,9 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 nnoremap <silent> <Leader>sw :call <SID>StripTrailingWhitespaces()<CR>
 
+" Auto close html tags in these files
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
+
 " Airline
 set laststatus=2
 set ttimeoutlen=50
@@ -148,8 +151,8 @@ let g:tagbar_autoclose = 1
 let VimuxUseNearest = 1
 let g:vroom_map_keys = 0
 let g:vroom_use_vimux = 1
-let g:vroom_use_spring = 1
 
+map <Leader>a :A<CR>
 map <Leader>tz :call VimuxZoomRunner()<CR>
 map <Leader>tc :call VimuxCloseRunner()<CR>
 map <Leader>ta :VroomRunTestFile<CR>
@@ -160,3 +163,5 @@ map <Leader>a :A<CR>
 "
 map <Leader>d :Dash<CR>
 map <Leader>ds :Dash <C-R><C-W> 
+
+

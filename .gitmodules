@@ -186,3 +186,9 @@
   path = bundle/vim-vue
   url = https://github.com/darthmall/vim-vue.git
   ignore = untracked
+[submodule "bundle/html5.vim"]
+	path = bundle/html5.vim
+	url = https://github.com/othree/html5.vim.git
+[submodule "bundle/vim-closetag"]
+	path = bundle/vim-closetag
+	url = https://github.com/alvan/vim-closetag.git
