@@ -9,6 +9,6 @@ setlocal formatoptions=croqln
 " add do/end and | to auto pairs
 let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`', '|':'|'}
 
-map <Leader>ta :call vroom#RunTestFile({'runner':'spring rspec --color --fail-fast'})<CR>
-map <Leader>tl :call vroom#RunNearestTest({'runner':'spring rspec --color --fail-fast'})<CR>
-map <Leader>th :call vroom#RunNearestTest({'runner':'HEADLESS=false spring rspec --color --fail-fast'})<CR>
+map <Leader>ta :call vroom#RunTestFile({'runner':'bin/rspec --color --fail-fast'})<CR>
+map <Leader>tl :call vroom#RunNearestTest({'runner':'bin/rspec --color --fail-fast'})<CR>
+map <Leader>th :call vroom#RunNearestTest({'runner':'HEADLESS=false bin/rspec --color --fail-fast'})<CR>

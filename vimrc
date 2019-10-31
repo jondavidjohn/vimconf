@@ -152,7 +152,6 @@ let VimuxUseNearest = 1
 let g:vroom_map_keys = 0
 let g:vroom_use_vimux = 1
 
-map <Leader>a :A<CR>
 map <Leader>tz :call VimuxZoomRunner()<CR>
 map <Leader>tc :call VimuxCloseRunner()<CR>
 map <Leader>ta :VroomRunTestFile<CR>
