@@ -45,7 +45,7 @@ set list
 set listchars=tab:\|\ ,trail:-
 highlight EndSpaces ctermbg=red ctermfg=white
 match EndSpaces /\s\+$/
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
 hi SpecialKey ctermbg=none ctermfg=10
 hi Sign ctermbg=none
 
