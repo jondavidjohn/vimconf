@@ -1,6 +1,8 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+set rtp+=/usr/local/opt/fzf
+
 let g:jsx_ext_required = 0
 let html_wrong_comments = 1
 
@@ -78,12 +80,7 @@ map <Leader>s :SyntasticToggleMode<Enter>
 map <Leader>se :Errors<Enter><Leader>j
 map <Leader>sc :SyntasticCheck<Enter>
 
-" CtrlP
-let g:ctrlp_working_path_mode = 'r'
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-let g:ctrlp_use_caching = 0
-let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
-map <Leader>p :CtrlP<Enter>
+map <Leader>p :FZF<Enter>
 
 " Make Arrows move differently
 nmap <Up> 10k
