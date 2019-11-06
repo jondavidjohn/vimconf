@@ -194,3 +194,11 @@
   path = bundle/fzf.vim
   url = https://github.com/junegunn/fzf.vim.git
   ignore = untracked
+[submodule "bundle/ember.vim"]
+  path = bundle/ember.vim
+  url = https://github.com/dsawardekar/ember.vim.git
+  ignore = untracked
+[submodule "bundle/vim-mustache-handlebars"]
+  path = bundle/vim-mustache-handlebars
+  url = https://github.com/mustache/vim-mustache-handlebars.git
+  ignore = untracked
