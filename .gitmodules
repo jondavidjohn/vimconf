@@ -202,3 +202,6 @@
   path = bundle/vim-mustache-handlebars
   url = https://github.com/mustache/vim-mustache-handlebars.git
   ignore = untracked
+[submodule "bundle/vim-terraform"]
+	path = bundle/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
