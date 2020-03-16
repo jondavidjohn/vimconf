@@ -51,12 +51,16 @@ set signcolumn=yes
 hi SpecialKey ctermbg=none ctermfg=10
 hi Sign ctermbg=none
 
+let g:gitgutter_map_keys = 0
+
 " Gists config
 let g:gist_post_private = 1
 let g:gist_open_browser_after_post = 1
 
 """ Mappings
+inoremap jj <ESC>
 let mapleader=" "
+nnoremap <SPACE> <Nop>
 map <Leader>b <C-^>
 
 " Pane Navigation
@@ -160,4 +164,6 @@ map <Leader>a :A<CR>
 map <Leader>d :Dash<CR>
 map <Leader>ds :Dash <C-R><C-W> 
 
-
+" Auto clear search highlight
+"
+nnoremap <esc> :noh<return><esc>

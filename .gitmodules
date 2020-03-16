@@ -2,10 +2,6 @@
   path = bundle/repmo
   url = https://github.com/vim-scripts/repmo.vim.git
   ignore = untracked
-[submodule "bundle/nerdtree"]
-  path = bundle/nerdtree
-  url = https://github.com/scrooloose/nerdtree.git
-  ignore = untracked
 [submodule "bundle/vim-markdown"]
   path = bundle/vim-markdown
   url = https://github.com/tpope/vim-markdown.git
@@ -74,20 +70,12 @@
   path = bundle/vim-liquid
   url = https://github.com/tpope/vim-liquid.git
   ignore = untracked
-[submodule "bundle/php.vim"]
-  path = bundle/php.vim
-  url = https://github.com/StanAngeloff/php.vim.git
-  ignore = untracked
 [submodule "bundle/airline"]
   path = bundle/airline
   url = https://github.com/bling/vim-airline.git
   ignore = untracked
 [submodule "bundle/rails.vim"]
   path = bundle/rails.vim
-  url = https://github.com/tpope/vim-rails.git
-  ignore = untracked
-[submodule "bundle/vim-rails"]
-  path = bundle/vim-rails
   url = https://github.com/tpope/vim-rails.git
   ignore = untracked
 [submodule "bundle/vim-rake"]
@@ -157,10 +145,6 @@
 [submodule "bundle/matchit.zip"]
   path = bundle/matchit.zip
   url = https://github.com/vim-scripts/matchit.zip.git
-  ignore = untracked
-[submodule "bundle/dash.vim"]
-  path = bundle/dash.vim
-  url = https://github.com/rizzatti/dash.vim.git
   ignore = untracked
 [submodule "bundle/vim-slim"]
   path = bundle/vim-slim
