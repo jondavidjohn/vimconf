@@ -187,5 +187,17 @@
   url = https://github.com/mustache/vim-mustache-handlebars.git
   ignore = untracked
 [submodule "bundle/vim-terraform"]
-	path = bundle/vim-terraform
-	url = https://github.com/hashivim/vim-terraform.git
+  path = bundle/vim-terraform
+  url = https://github.com/hashivim/vim-terraform.git
+  ignore = untracked
+[submodule "/Users/jon/.vim/bundle/vim-go"]
+  path = /Users/jon/.vim/bundle/vim-go
+  url = https://github.com/fatih/vim-go.git
+  ignore = untracked
+[submodule "bundle/vimux-golang"]
+  path = bundle/vimux-golang
+  url = https://github.com/benmills/vimux-golang.git
+  ignore = untracked
+[submodule "bundle/vim-rhubarb"]
+	path = bundle/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git

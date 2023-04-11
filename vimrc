@@ -43,13 +43,18 @@ set novisualbell        " turn off visual bell
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
 set list
 set listchars=tab:\|\ ,trail:-
-highlight EndSpaces ctermbg=red ctermfg=white
-match EndSpaces /\s\+$/
 set signcolumn=yes
-hi SpecialKey ctermbg=none ctermfg=10
-hi Sign ctermbg=none
+
+highlight EndSpaces ctermbg=red ctermfg=white
+highlight Tabs ctermbg=none ctermfg=0
+highlight SpecialKey ctermbg=none ctermfg=10
+highlight Sign ctermbg=none
+
+match EndSpaces /\s\+$/
+match Tabs /\t/
 
 let g:gitgutter_map_keys = 0
 
@@ -76,13 +81,21 @@ map <Leader>- :vertical resize -5<CR>
 set splitbelow
 set splitright
 
-" Syntastic
-let g:syntastic_check_on_open=1
-let g:syntastic_python_checker_args = " --ignore=E501,W402 "
-let g:syntastic_ruby_rubocop_exec = "/Users/jon/.rbenv/shims/rubocop-git --hound"
-map <Leader>s :SyntasticToggleMode<Enter>
-map <Leader>se :Errors<Enter><Leader>j
-map <Leader>sc :SyntasticCheck<Enter>
+" Ale
+let g:ale_linters = {
+\   'javascript': ['standard'],
+\   'ruby': ['rubocop'],
+\}
+let g:ale_fixers = {
+\   'javascript': ['standard'],
+\   'ruby': ['rubocop'],
+\}
+let g:ale_lint_on_save = 1
+let g:ale_ruby_rubocop_executable = 'bin/rubocop'
+
+" Folding
+let g:ruby_fold = 1
+set foldlevelstart=99
 
 map <Leader>p :FZF<Enter>
 
