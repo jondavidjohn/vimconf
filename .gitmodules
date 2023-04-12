@@ -190,8 +190,8 @@
   path = bundle/vim-terraform
   url = https://github.com/hashivim/vim-terraform.git
   ignore = untracked
-[submodule "/Users/jon/.vim/bundle/vim-go"]
-  path = /Users/jon/.vim/bundle/vim-go
+[submodule "bundle/vim-go"]
+  path = bundle/vim-go
   url = https://github.com/fatih/vim-go.git
   ignore = untracked
 [submodule "bundle/vimux-golang"]
