@@ -199,5 +199,8 @@
   url = https://github.com/benmills/vimux-golang.git
   ignore = untracked
 [submodule "bundle/vim-rhubarb"]
-	path = bundle/vim-rhubarb
-	url = https://github.com/tpope/vim-rhubarb.git
+  path = bundle/vim-rhubarb
+  url = https://github.com/tpope/vim-rhubarb.git
+[submodule "bundle/vim-projectionist"]
+  path = bundle/vim-projectionist
+  url = https://github.com/tpope/vim-projectionist.git
