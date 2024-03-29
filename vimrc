@@ -1,7 +1,7 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-set rtp+=/usr/local/opt/fzf
+set rtp+=/opt/homebrew/opt/fzf
 
 let g:jsx_ext_required = 0
 let html_wrong_comments = 1
@@ -63,7 +63,6 @@ let g:gist_post_private = 1
 let g:gist_open_browser_after_post = 1
 
 """ Mappings
-inoremap jj <ESC>
 let mapleader=" "
 nnoremap <SPACE> <Nop>
 map <Leader>b <C-^>
@@ -171,6 +170,10 @@ map <Leader>tc :call VimuxCloseRunner()<CR>
 map <Leader>ta :VroomRunTestFile<CR>
 map <Leader>tl :VroomRunNearestTest <CR>
 map <Leader>a :A<CR>
+
+" Golang
+"
+map <Leader>ge :GoIfErr<CR>
 
 " Dash
 "
